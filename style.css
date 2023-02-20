@@ -125,6 +125,15 @@ position: relative;
   left: 20px;
 }
 
+#mobile{
+display: none;
+align-items: center;
+}
+
+#close{
+  display: none;
+}
+
 #hero{
   background-image: url(images/hero4.png);
   height: 90vh;
@@ -568,6 +577,317 @@ footer .copyright{
   text-align: center;
 }
 
-  
+/* Shop-Page */
 
+#page-header{
+  background: url(images/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px ;
+}
+
+#page-header h2,
+#page-header p{
+  color: #fff;
+}
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+
+}
+
+#pagination a i{
+  font-size: 16px;
+}
+
+
+
+/* Single Product */
+
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+width: 40%;
+margin-right: 50px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col{
+  flex-basis:24% ;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0 ;
+}
+
+#prodetails .single-pro-details h2{
+  font-size:26px ;
+}
+
+#prodetails .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right:10px ;
+}
+
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
+
+#prodetails .single-pro-details button{
+  background: #088178;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Media Query */
+
+@media (max-width:780px){
+
+  .section-p1{
+    padding: 40px 40px;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow:0 40px 60px rgba(0, 0, 0, 0.1) ;
+    padding: 80px 0 0 10px;
+    transition: 300ms;
+  }
+
+  #navbar.active{
+    right: 0px;
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+}
+
+#navbar a i{
+  color: black;
+}
+
+#mobile{
+  display: flex;
+  align-items: center;
+  }
+
+  
+#mobile i{
+  color:#1a1a1a ;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+#mobile a{
+  color: black;
+}
+
+#close{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  text-decoration: none;
+  display: initial;
+  font-weight: bold;
+}
+
+#close:hover{
+  color: red;
+}
+
+#lg-bag{
+  display: none;
+}
+
+#hero{
+  
+  height: 70vh;
+  padding: 0 80px;
+  background-position: top 30% right 30%;
+  
+}
+
+#feature{
+ justify-content: center;
+}
+
+#feature .fe-box{
+  margin: 15px 15px;
+}
+
+#product1 .pro-container{
+ justify-content: center;
+}
+
+#product1 .pro{
+  margin:15px
+}
+
+#banner{
+  height: 40vh;
+}
+
+#sm-banner .banner-box{
+  min-width:100% ;
+  height: 53vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner3 {
+  padding: 0 40px;
+  
+  
+}
+#banner3 .banner-box{
+  width: 28%;
+  padding: 0 30px;
+}
+
+#newsletter .form{
+  width: 70%;
+  
+}
+
+#sm-banner .banner-box:nth-child(2){
+  margin-top: 20px;
+}
+
+}
+
+@media (max-width:477px){
+
+  .section-p1{
+    padding:20px ;
+  }
+  #header{
+    padding: 10px 30px;
+  }
+
+  h1{
+    font-size: 38px;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+    transition: 300ms ease;
+}
+
+#feature{
+  justify-content: space-between;
+}
+
+#product1 .pro{
+  width: 100%;
+}
+
+#sm-banner .banner-box{
+  height: 40vh;
+}
+
+#sm-banner .banner-box:nth-child(2){
+  margin-top: 20px;
+}
+
+#banner3{
+  padding: 0 20px;
+}
+
+#banner3 .banner-box{
+  width: 100%;
+}
+
+#newsletter{
+  padding: 40px 20px;
+}
+
+#newsletter .form{
+  width: 100%;
+}
+
+/* Single Product */
+
+#prodetails{
+  display: flex;
+  flex-direction: column;
+}
+
+#prodetails .single-pro-image{
+  width: 100%;
+  margin-right: 0px;
+}
+}
 
